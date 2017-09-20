@@ -78,7 +78,7 @@ app.use(function (req, res, next) {
 app.use('/',routes);
 app.use('/users',users);
 
-app.set('port',(process.env.port||3030));
-app.listen(app.get('port'),function(){
-	console.log('Server listening on port: '+app.get('port'));
+var port = process.env.PORT || 8000;
+app.listen(port,function(){
+	console.log('Server listening on port: '+port);
 });
