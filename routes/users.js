@@ -44,7 +44,7 @@ passport.use('production',new LocalStrategy(
 				if(isMatch && user.level=='production'){
 					return done(null,user);
 				}else{
-					console.log('pss mm');
+					console.log(password + user.password);
 					return done(null,false,{message: 'wrong password'});
 				}
 			});
@@ -60,9 +60,13 @@ passport.use('operation',new LocalStrategy(
 			}
 			User.comparePassword(password,user.password,function(err,isMatch){
 				if(err)throw err;
+				//if(!isMatch && user.level=='operation')console.log('wrong pws');
 				if(isMatch && user.level=='operation'){
+					console.log(user.level);
 					return done(null,user);
 				}else{
+					console.log(user.level);
+					//console.log(password + user.password);
 					console.log('pss mm');
 					return done(null,false,{message: 'wrong password'});
 				}

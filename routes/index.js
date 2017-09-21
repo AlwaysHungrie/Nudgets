@@ -8,10 +8,10 @@ router.get('/',ensureAuthenticated,function(req,res){
 router.get('/index/loginTeacher',ensureAuthenticated,function(req,res){
 	res.render('teacher');
 });
-router.get('/index/loginPT',ensureAuthenticated,function(req,res){
+router.get('/index/production',ensureAuthenticated,function(req,res){
 	res.render('production');
 });
-router.get('/index/loginOT',ensureAuthenticated,function(req,res){
+router.get('/index/operation',ensureAuthenticated,function(req,res){
 	res.render('operation');
 });/*
 router.get('/operation',ensureAuthenticated,function(req,res){

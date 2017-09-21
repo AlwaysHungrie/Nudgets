@@ -161,7 +161,7 @@ span.psw {
 
 <div id="id02" class="modal">
   
-  <form method="post" class="modal-content animate" action="/users/loginOT">
+  <form method="post" class="modal-content animate" action="/users/loginPT">
     <div class="imgcontainer1">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
       <h2 align = "center">Product Team</h2>
@@ -186,7 +186,7 @@ span.psw {
 </div>
 
 <div id="id03" class="modal">
-  <form class="modal-content animate" action="/action_page.php">
+  <form method="post" class="modal-content animate" action="/users/loginOT">
     <div class="imgcontainer1">
       <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
       <h2 align = "center">Operation Team</h2>
@@ -195,18 +195,18 @@ span.psw {
 
     <div class="container">
       <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="username" required>
 
       <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit"></button>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <button type="submit">Login</button>
       <input type="checkbox" checked="checked"> Remember me
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <!--div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+    </div-->
   </form>
 </div>
 
