@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<title>Attendance and Grade</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+p.ridge {border-style: ridge;}
+.mystyle {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+.white-box {
+    background-color: white;
+    color: black;
+    height:110px;
+    <!--other positioning attributes-->
+}
+.bordered{
+    width: 820px;
+    height :800px;
+    padding :20px;
+    border: 2px solid lightgray;
+    border-radius: 1px;
+}
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+} 
+form {
+  text-align: center;
+}
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+<body bgcolor = "AliceBlue">
+
+<!-- left  Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-62"><b>Operation Team</b></h3>
+  </div>
+<p class="ridge">
+   <div class="w3-bar-block">
+     <p><h4 class="w3-padding-3"><b><u>Student Tracker</u></b></h4></p>
+      <a href="file:///C:/Users/sheona/Desktop/personal%20details.html" class="w3-bar-item w3-button w3-hover-white">Personal Details</a> 
+    <h4 class="w3-padding-3"><b><u>Student Discipline Tracker</u></b></h4>
+      <a href="file:///C:/Users/sheona/Desktop/attendance%20and%20grade.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attendance and Grade</a> 
+   <p> <h4 class="w3-padding-3"><b><u>Trainer Info</u></b></h4></p>
+       <a href="file:///C:/Users/sheona/Desktop/trainer%20info.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Schedule</a> 
+       <a href="file:///C:/Users/sheona/Desktop/trainer%20info.html"w3_close()" class="w3-bar-item w3-button w3-hover-white">Performance</a> 
+       <a href="file:///C:/Users/sheona/Desktop/trainer%20info.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Self-development tracker</a> <br>
+      
+</div>
+<!-- Search Google -->
+<center>
+<FORM method=GET action="http://www.google.com/search">
+<TABLE bgcolor="#FFFFFF"><tr><td>
+<A HREF=" http://www.google.com/">
+<IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A>
+<INPUT TYPE=text name=q size=10 maxlength=255 value="">
+<INPUT TYPE=hidden name=hl value="en">
+<INPUT type=submit name=btnG VALUE="Google Search">
+</td></tr></TABLE>
+</FORM>
+</center>
+<!-- Search Google -->
+<br><p></p><br><br><br><br><br></p>
+</form>
+</nav>
+  
+<!--  right Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:200px;right:0;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-62"><b>More Info</b></h3>
+  </div>
+<p class="ridge">
+  <div class="w3-bar-block">
+     <a href="file:///C:/Users/sheona/Desktop/archive(3)/Student%20Info.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal info</a> 
+    <a href="file:///C:/Users/sheona/Desktop/estimation%20of%20funds.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Estimation of Funds</a> 
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Grade.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Agreements</a>
+  </div></p>
+</nav>
+
+<!--Top Menu-->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="file:///C:/Users/sheona/Desktop/operation%20team%20new.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">LOGOUT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">Name</a>
+      </div>
+<div class="white-box">
+   <img src="http://www.drkfoundation.org/wp-content/uploads/2017/05/Nudge-logo-272x160.jpg" alt="Gurukul" height="110" width="200">
+<hr>
+</div>
+</div>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main bordered" style="margin-left:310px;margin-top:170px;margin-right:210px">
+<div>
+<p><h3> Enter the student Id to check attendance, grade and progress rate of student :-</h3></p>
+<br>
+<form action="/action_page.php">
+  Student ID:<br>
+  <input type="text" name="studentid">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> <br><br>
+<p><h3>Check for student attendance, grade and progress rate batch-wise :-</h3><p>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Select Batch</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Batch 1</a>
+    <a href="#about">Batch 2</a>
+    <a href="#contact">Batch 3</a>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<!--<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:48px;padding-right:58px"><p class="w3-right"></p></div>-->
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+</html>
