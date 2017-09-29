@@ -103,8 +103,37 @@ router.post('/loginPT',
 
 router.get('/logout',function(req,res){
 	req.logout();
-	req.redirect('/users/login');
+	res.redirect('/users/login');
 });
+
+var Student = require('../models/student');
+
+router.post('/register',function(req,res){
+		var name = req.body.name;
+		var age  = req.body.age;
+		var address  = req.body.address;
+		var phone = req.body.phone;
+		var division;var attendance;
+
+		var newStudent = new Student({
+			name: name,
+			age : age,
+			address:address,
+			phone:phone,
+			division:division,
+			attendance:attendance
+		});
+
+		User.createUser(newStudent, function(err, user){
+			if(err) throw err;
+			console.log(user);
+		});
+
+		res.redirect('/index/loginTeacher');
+});
+
+
+
 
 module.exports = router;
 

@@ -22,6 +22,13 @@ p.ridge {border-style: ridge;}
     height:110px;
     margin-left:200px;
 }
+.bordered {
+    width: 800px;
+    height: 800px;
+    padding: 20px;
+    border: 2px solid lightgray;
+    border-radius: 1px;
+  }
 .mystyle {
     width: 200px;
     padding: 10px;
@@ -155,8 +162,27 @@ input {
 </style>
 <body bgcolor = "AliceBlue">
 
+
+<!--  right Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:200px;right:0;font-weight:bold;margin-right:10px" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  </div>
+<!--<p class="ridge">-->
+  <div class="w3-bar-block">
+    <h4 class="w3-padding-3"><b><u>Content Library</u></b></h4>
+    <a href="file:///C:/Users/Ishitaa/Desktop/e-learning%20modules.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">E-learning modules</a> 
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Attendance.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <h4 class="w3-padding-3"><b><u>Self Development Tracker</u></b></h4>
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Attendance.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Completion</a> 
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Grade.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificate Management</a>
+  </div></p>
+</nav>
+
+
 <!-- left  Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+
+<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;margin-left:10px" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
     <h3 class="w3-padding-62"><b>TRAINER</b></h3>
@@ -171,8 +197,8 @@ input {
     <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Course_completion.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Completion</a> 
     <p><h4 class="w3-padding-3"><b><u>Course Calender</u></b></h4> </p>
     <a href="file:///C:/Users/Ishitaa/Desktop/LMS_schedule.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trainer Schedule</a> 
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_schedule.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Test Schedule</a> 
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_schedule.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Holidays</a>
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Tests.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Test Schedule</a> 
+    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Holidays.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Holidays</a>
   <p></p>
 </div>
 <!-- Search Google -->
@@ -191,38 +217,19 @@ input {
 <br><p></p><br><br><br><br><br></p>
 </form>
 </nav>
-  
-<!--  right Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-large w3-padding" style="z-index:3;width:200px;right:0;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-62"><b>Content Library</b></h3>
-  </div>
-<p class="ridge">
-  <div class="w3-bar-block">
-     <a href="file:///C:/Users/sheona/Desktop/archive(3)/Student%20Info.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">E-learning modules</a> 
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Attendance.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
-  </div></p>
-<div class="w3-container">
-    <h3 class="w3-padding-62"><b>Self Development Tracker</b></h3>
-  </div>
-<p class="ridge">
-  <div class="w3-bar-block">
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Attendance.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Completion</a> 
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_Grade.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificate Management</a>
-  </div></p>
-</nav>
+
 
 <!--Top Menu-->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card-2">
-    <a href="file:///C:/Users/Ishitaa/Desktop/LMS_new.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">LOGOUT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Quick Links</a>
+    <form action='/users/logout' method='get'><button type="submit" class="w3-bar-item w3-button w3-padding-large w3-right">LOGOUT</button></form>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">Name</a>
       </div>
 <div class="white-box">
     <img src="http://www.drkfoundation.org/wp-content/uploads/2017/05/Nudge-logo-272x160.jpg" width="200" height="110" alt="Computer Hope">
 <hr>
+
 </div>
 </div>
 
@@ -238,30 +245,125 @@ input {
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:310px;margin-top:170px;margin-right:210px">
-<!-- Header -->
-  <div class="w3-container" style="margin-top:48px" id="register">
-<br>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Register</b></h1>
-<form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Age</label>
-        <input class="w3-input w3-border" type="text" name="Age" required>
-      </div>
-      <div class="w3-section">
-        <label>Address</label>
-        <input class="w3-input w3-border" type="text" name="Address" required>
-      </div>
-      <div class="w3-section">
-        <label>Phone number</label>
-        <input class="w3-input w3-border" type="text" name="Phone number" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-amber w3-margin-bottom">Register</button>
-    </form>  
-  </div>
-  
+<div class="w3-main bordered" style="margin-left:310px;margin-top:170px;margin-right:210px">
+<!--!div class="mystyle"!-->
+
+<div class="w3-main" style="margin-left:90px;margin-right:50px">
+<div id="myDIV" class="header">
+  <h2 style="margin:2px"> Announcements</h2>
+ <!-- <input type="text" id="myInput" placeholder="Title...">-->
+ <!-- <span onclick="newElement()" class="addBtn">Add</span>-->
 </div>
+<ul id="myUL">
+  <li >Reschedule the training</li>
+  <li >Check the progress report of Ramesh Singh</li>
+  <li >Check on placements</li>
+  <li >Organize office</li>
+</ul>
+</div>
+
+<br></br>
+<br></br>
+
+<div class="w3-main" style="margin-left:90px;margin-right:50px">
+<div id="myDIV" class="header">
+  <h2 style="margin:2px"> To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+<ul id="myUL">
+  <li >Reschedule the training</li>
+  <li >Check the progress report of Ramesh Singh</li>
+  <li >Check on placements</li>
+  <li >Organize office</li>
+</ul>
+<!-- End page content -->
+</div>
+
+</div>
+
+
+
+
+
+<!-- W3.CSS Container -->
+<!--<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:48px;padding-right:58px"><p class="w3-right"></p></div>-->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+</html>

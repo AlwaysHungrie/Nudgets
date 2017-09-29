@@ -17,6 +17,7 @@ var db = mongoose.connection;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var registerStudents = require('./routes/register-student');
 
 //Initalise the app
 var app = express();
@@ -77,6 +78,7 @@ app.use(function (req, res, next) {
 
 app.use('/',routes);
 app.use('/users',users);
+app.use('/register',registerStudents);
 
 var port = process.env.PORT || 8000;
 app.listen(port,function(){
