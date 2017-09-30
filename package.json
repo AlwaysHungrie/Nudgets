@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/AlwaysHungrie/Nudgets.git"
   },
+  "engine": {
+    "node": "v6.9.4",
+    "npm" : "3.10.10"
+  },
   "keywords": [
     "node.js",
     "hackerearth",
