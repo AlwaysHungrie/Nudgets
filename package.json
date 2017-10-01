@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/AlwaysHungrie/Nudgets.git"
   },
-   "engines": {
-    "node": ">=4.3 <7.0",
-    "npm": ">=1.0.0"
+  "engine": {
+    "node": "v6.9.4",
+    "npm" : "3.10.10"
   },
   "keywords": [
     "node.js",
